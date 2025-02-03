@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 char* welcome() {
-    return "Welcome to Code Radar!";
+    float n;
+    scanf("%f", &n)
+    return "You entered: %f, n";
 }
 
 int main() {
