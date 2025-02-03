@@ -2,7 +2,7 @@
 
 char* welcome() {
     float n;
-    scanf("%f", &n)
+    scanf("%f", &n);
     return "You entered: %f", n;
 }
 
