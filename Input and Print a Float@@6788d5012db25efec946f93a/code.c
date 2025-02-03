@@ -3,11 +3,11 @@
 char* welcome() {
     float n;
     scanf("%f", &n);
-    return( "You entered: %f", n);
+    printf( "You entered: %f", n);
    
 }
 
 int main() {
-    printf("%s", welcome());
+    return("%s", welcome());
     return 0;
 }
