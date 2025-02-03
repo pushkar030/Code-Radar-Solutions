@@ -3,8 +3,8 @@
 char* welcome() {
     float n;
     scanf("%f", &n);
-    string s = "You entered: %f", n;
-    return s;
+    printf( "You entered: %f", n);
+    return 0;
 }
 
 int main() {
