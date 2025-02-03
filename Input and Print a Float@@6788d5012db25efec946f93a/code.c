@@ -1,13 +1,7 @@
 #include <stdio.h>
-
-char* welcome() {
+int main() {
     float n;
     scanf("%f", &n);
-    return n;
-   
-}
-
-int main() {
-    printf("%s", welcome());
+    printf("You entered: %f", n);
     return 0;
 }
