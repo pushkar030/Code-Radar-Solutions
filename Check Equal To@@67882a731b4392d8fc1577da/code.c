@@ -15,7 +15,7 @@ int main() {
     int b;
     scanf("%d",&b);
 
-    if(a == b){
+    if(a=b){
         printf("True");
     }
     else{
