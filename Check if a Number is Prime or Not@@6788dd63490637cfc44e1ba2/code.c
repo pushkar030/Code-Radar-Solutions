@@ -12,9 +12,10 @@ int main() {
             break;
         }
     }
-    if (is_prime) {
+    if(is_prime){
         printf("Prime");
-    } else {
+    } 
+    else {
         printf("Not Prime");
     }
 }
