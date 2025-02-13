@@ -1,10 +1,8 @@
 #include <stdio.h>
 int main() {
     int num, i;
-    printf("Enter a number: ");
     scanf("%d", &num);
     if (num <= 1) {
-        printf("The number is not prime.\n");
         return 0;
     }
     int is_prime = 1;  
