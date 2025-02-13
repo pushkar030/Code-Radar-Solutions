@@ -2,6 +2,6 @@
 int main(){
     int a,b,tresult;
     scanf("%d %d",&a ,&b);
-    result = a | b;
+    tresult = a | b;
     printf("%d",result);
 }
