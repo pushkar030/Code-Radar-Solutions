@@ -18,8 +18,9 @@ int main() {
     
     // Check if input is within valid range
     if (a >= 0 && a < 7) {
+        int b = a -1;
         // Print the corresponding day
-        printf("%s\n", arr[a-1]);
+        printf("%s\n", arr[b]);
     } else {
         // Handle invalid input
         printf("Invalid");
