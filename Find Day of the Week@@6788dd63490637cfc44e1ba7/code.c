@@ -22,7 +22,7 @@ int main() {
         printf("%s\n", arr[a]);
     } else {
         // Handle invalid input
-        printf("Invalid input! Please enter a number between 0 and 6.\n");
+        printf("Invalid");
     }
 
     return 0;
