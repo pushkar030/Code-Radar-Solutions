@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <math.h> 
-
 int main() {
     int num, i;
     printf("Enter a number: ");
@@ -10,7 +8,7 @@ int main() {
         return 0;
     }
     int is_prime = 1;  
-    for (i = 2; i <= sqrt(num); i++) {
+    for (i = 2; i <=num; i++) {
         if (num % i == 0) {
             is_prime = 0; 
             break;
