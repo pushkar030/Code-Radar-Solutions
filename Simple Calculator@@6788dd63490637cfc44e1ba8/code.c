@@ -4,8 +4,8 @@ int main() {
     float num1, num2, result;
     char operator;
     scanf("%f", &num1);
-    scanf(" %c", &operator);  
     scanf("%f", &num2);
+    scanf(" %c", &operator);  
     switch (operator) {
         case '+':
             result = num1 + num2;
