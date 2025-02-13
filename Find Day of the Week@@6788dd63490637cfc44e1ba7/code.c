@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<array>
 int main() {
     int a;
     int arr[7] = {"Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday","Sunday"};
