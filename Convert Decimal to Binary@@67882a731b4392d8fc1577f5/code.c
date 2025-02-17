@@ -1,20 +1,29 @@
 #include<stdio.h>
-int main(){
+
+int main() {
     int n;
-    scanf("%d",&n);
-    int r;
+    scanf("%d", &n);
+
+    int r = 0;       // Initialize reverse variable
     int digit;
-    int ans;
-    while(n){
-        digit = n%10;
-        r = r + digit * 10;
-    }
-    while(r){
-        digit= r%2;
-        ans = ans + digit * 10;
-        r = r/2;
+    int ans = 0;     // Initialize the answer variable
+
+    // Reverse the number
+    while (n) {
+        digit = n % 10;
+        r = r * 10 + digit;  // Corrected reversal logic
+        n = n / 10;
     }
 
-    printf("%d"ans);
+    // Convert reversed number to binary
+    while (r) {
+        digit = r % 2;  // Get remainder (binary digit)
+        ans = ans * 10 + digit;  // Build binary number
+        r = r / 2;
+    }
 
+    // Print the binary equivalent (reverse of binary digits)
+    printf("%d", ans);
+
+    return 0;
 }
