@@ -16,7 +16,7 @@ int main() {
     }
 
     // Convert reversed number to binary
-    while (r) {
+    while (r>=0) {
         digit = r % 2;  // Get remainder (binary digit)
         ans = ans * 10 + digit;  // Build binary number
         r = r / 2;
