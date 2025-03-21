@@ -12,7 +12,9 @@ int main() {
     int i = 0;
     int j = n;
     while(i<=j){
-        swap(arr[i] , arr[j]);
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
     for(int i =0; i<n+1; i++){
         printf("%d",arr[i]);
