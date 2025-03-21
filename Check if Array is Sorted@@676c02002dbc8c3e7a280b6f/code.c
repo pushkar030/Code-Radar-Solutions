@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main() {
-    bool ab = True;
+    bool ab = 1;
     int n;
     scanf("%d",&n);
 
@@ -13,8 +13,14 @@ int main() {
     }
     for(int i=0; i<n; i++){
         if(arr[i]>arr[i+1]){
-            ab = False;
+            ab = 0;
         }
     }
-    printf("%s" , ab);
+
+    if(ab == 1){
+        printf("Sorted");
+    }
+    else{
+        printf("Not Sorted");
+    }
 }
