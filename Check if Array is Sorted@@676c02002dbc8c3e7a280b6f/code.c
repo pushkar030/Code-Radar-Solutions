@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main() {
-    bool ab = 1;
+    int ab = 1;
     int n;
     scanf("%d",&n);
 
