@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main() {
-    bool ab = true;
+    bool ab = True;
     int n;
     scanf("%d",&n);
 
@@ -13,7 +13,7 @@ int main() {
     }
     for(int i=0; i<n; i++){
         if(arr[i]>arr[i+1]){
-            ab = false;
+            ab = False;
         }
     }
     printf("%s" , ab);
