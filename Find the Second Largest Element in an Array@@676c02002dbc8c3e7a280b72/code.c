@@ -11,8 +11,8 @@ int main() {
         scanf("%d",&a);
         arr[i] = a;
     }
-    int maxi = arr[0];
-    int maxi2 = arr[0];
+    int maxi = -1000;
+    int maxi2 = -1000;
 
     for(int i=0; i<n; i++){
         if(arr[i]>maxi){
@@ -24,7 +24,7 @@ int main() {
         }
 
     }
-    if(maxi2 == maxi){
+    if(maxi2 == -1000){
         printf("-1");
     }
     else{
