@@ -19,7 +19,7 @@ int main() {
     }
 
     int peak = findPeak(arr, n);
-    printf("Peak element: %d\n", peak);
+    printf("%d", peak);
 
     return 0;
 }
