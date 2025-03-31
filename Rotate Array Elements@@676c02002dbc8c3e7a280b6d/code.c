@@ -1,21 +1,25 @@
 #include<stdio.h>
+
+int findPeak(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        if ((i == 0 || arr[i] >= arr[i - 1]) && (i == n - 1 || arr[i] >= arr[i + 1])) {
+            return arr[i];
+        }
+    }
+    return -1;
+}
+
 int main() {
     int n;
-    scanf("%d" , &n);
+    scanf("%d", &n);
+
     int arr[n];
-    for(int i=0; i<n+1; i++){
-        int a;
-        scanf("%d" , &a);
-        arr[i] = a;
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    int i = 0;
-    int j = n;
-    while(i<=j){
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
-    for(int i =0; i<n+1; i++){
-        printf("%d",arr[i]);
-    }
+
+    int peak = findPeak(arr, n);
+    printf("Peak element: %d\n", peak);
+
+    return 0;
 }
