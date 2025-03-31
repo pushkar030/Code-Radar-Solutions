@@ -22,6 +22,6 @@ int main() {
             oddc++;
         }
     }
-    printf("%d",evenc);
-    printf("%d",oddc);
+    printf("%d %d",evenc,oddc);
+    
 }
