@@ -24,5 +24,11 @@ int main() {
         }
 
     }
-    printf("%d", maxi2);
+    if(maxi2 == maxi){
+        printf("-1");
+    }
+    else{
+        printf("%d", maxi2);
+    }
+    
 }
