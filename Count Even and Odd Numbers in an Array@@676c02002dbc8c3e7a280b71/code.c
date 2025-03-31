@@ -3,6 +3,8 @@ int main() {
     int n;
     scanf("%d",&n);
 
+    int arr[n];
+
     int oddc = 0;
     int evenc = 0;
 
